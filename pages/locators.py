@@ -16,3 +16,16 @@ class LoginPageLocators():
     REG_USER_PASSWORD = (By.CSS_SELECTOR, "#id_registration-password")
     REG_USER_PASSWORD_REPEAT = (By.CSS_SELECTOR, "#id_registration-password2")
     REG_USER_BUTTON = (By.CSS_SELECTOR, "[name='registration_submit']")
+
+class ProductPageLocators():
+    ADD_TO_CART_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
+    ALERT_PRODUCT_ADD_TO_CART = (By.CSS_SELECTOR, "#messages div:nth-child(1) .alertinner")
+    ALERT_PRODUCT_NAME = (By.CSS_SELECTOR, "#messages div:nth-child(1) strong")
+    ALERT_PRODUCT_PRICE_SHOW = (By.CSS_SELECTOR, "#messages div:nth-child(3) p")
+    ALERT_PRODUCT_PRICE_VALUE = (By.CSS_SELECTOR, "#messages div:nth-child(3) strong")
+    PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main h1")
+    PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main .price_color")
+
+    
+
+    
