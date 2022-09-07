@@ -1,4 +1,6 @@
 from selenium.webdriver.common.by import By
+
+from .pages.login_page import LoginPage
 from .pages.main_page import MainPage
 
 def test_guest_can_go_to_login_page(browser):
@@ -22,5 +24,10 @@ def test_add_to_cart_button(browser):
         except:
             return False        
         return True
-            
     assert is_button_exist(), 'Button does not exist'
+
+def test_should_be_login_page(browser):
+    link = 'http://selenium1py.pythonanywhere.com/ru/accounts/login1/'
+    page = LoginPage(browser, link)
+    browser.get(link)
+    page.should_be_login_page()
